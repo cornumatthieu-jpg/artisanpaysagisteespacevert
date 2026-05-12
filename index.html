@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artisan Paysagiste Espace Vert — Artisan jeune et efficace, intervention rapide en urgence</title>
+<meta name="description" content="Artisan Paysagiste Espace Vert, paysagiste à Saint-Quentin. Espaces verts, élagage, intervention rapide. Devis gratuit au 07 62 71 93 37.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --green: #2d7a3a;
+  --green-dark: #235e2c;
+  --green-light: #4caf50;
+  --green-pale: #e8f5e9;
+  --dark: #1a1a1a;
+  --gray: #666;
+  --gray-light: #999;
+  --light: #f9f9f7;
+  --white: #ffffff;
+  --border: #e8e8e8;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  color: var(--dark);
+  background: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+/* ============= NAV ============= */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  height: 70px;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 1px 20px rgba(0,0,0,0.07);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 36px; height: 36px;
+  background: var(--green-pale);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--gray);
+  font-size: 0.95rem;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--green); }
+
+.nav-cta {
+  display: inline-block;
+  padding: 9px 20px;
+  background: var(--green);
+  color: white !important;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.nav-cta:hover { background: var(--green-dark); color: white !important; }
+
+/* ============= HERO ============= */
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-color: #1e3a20;
+  background-image: url('https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(1.05);
+  animation: zoomOut 10s ease-out forwards;
+}
+
+@keyframes zoomOut {
+  from { transform: scale(1.12); }
+  to { transform: scale(1.0); }
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.65) 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 20px;
+  max-width: 900px;
+  animation: fadeUp 1s ease 0.3s both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-eyebrow {
+  display: inline-block;
+  padding: 7px 18px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 50px;
+  color: white;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 5.5vw, 4.5rem);
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1.08;
+  margin-bottom: 1.3rem;
+  text-shadow: 0 2px 30px rgba(0,0,0,0.4);
+}
+
+.hero-tagline {
+  font-size: clamp(1rem, 1.6vw, 1.3rem);
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 2.6rem;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 16px 38px;
+  background: var(--green);
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 4px 20px rgba(45,122,58,0.4);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: var(--green-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(45,122,58,0.5);
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 16px 38px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px);
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  border: 1.5px solid rgba(255,255,255,0.4);
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.22);
+  border-color: white;
+}
+
+/* ============= SECTIONS ============= */
+section { padding: 100px 5%; }
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  color: var(--green);
+  font-size: 0.82rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.section-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--dark);
+  line-height: 1.15;
+}
+
+.section-header p {
+  color: var(--gray);
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+/* ============= À PROPOS ============= */
+#apropos { background: var(--light); }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 36px 24px;
+  text-align: center;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.04);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+}
+
+.stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--green);
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  color: var(--gray);
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+/* ============= SERVICES ============= */
+#services { background: var(--white); }
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 36px 30px;
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+  border-color: var(--green-pale);
+}
+
+.service-icon {
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  display: inline-block;
+  width: 60px; height: 60px;
+  background: var(--green-pale);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-card h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--dark);
+}
+
+.service-card p {
+  color: var(--gray);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* ============= TÉMOIGNAGES ============= */
+#temoignages { background: var(--light); }
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 36px;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.testimonial-stars {
+  color: #f5b50a;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  letter-spacing: 0.1em;
+}
+
+.testimonial-card blockquote {
+  font-style: italic;
+  color: var(--dark);
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 22px;
+  font-weight: 300;
+}
+
+.testimonial-card cite {
+  color: var(--green);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.95rem;
+}
+
+/* ============= CALENDRIER ============= */
+#calendrier { background: var(--white); }
+
+.cal-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--light);
+  border-radius: 20px;
+  padding: 36px;
+}
+
+.cal-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+  margin-bottom: 24px;
+  font-size: 0.88rem;
+  color: var(--gray);
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-dot {
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-available { background: var(--green-light); }
+.dot-appointment { background: #f5b50a; }
+.dot-busy { background: #d34545; }
+
+#cal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#cal-header button {
+  background: var(--white);
+  border: 1px solid var(--border);
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: var(--green);
+  transition: all 0.2s;
+}
+
+#cal-header button:hover {
+  background: var(--green);
+  color: white;
+  border-color: var(--green);
+}
+
+#cal-month-label {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--dark);
+}
+
+#cal-days-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.day-header {
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 10px 0;
+}
+
+#cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.cal-cell {
+  aspect-ratio: 1;
+  background: var(--white);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.92rem;
+  color: var(--dark);
+  cursor: pointer;
+  transition: all 0.15s;
+  position: relative;
+  border: 1px solid transparent;
+}
+
+.cal-cell:hover { background: var(--green-pale); border-color: var(--green-light); }
+.cal-empty { background: transparent; cursor: default; }
+.cal-empty:hover { background: transparent; border-color: transparent; }
+.is-today { font-weight: 700; color: var(--green); border-color: var(--green) !important; }
+
+.state-available { background: var(--green-light); color: white; }
+.state-available:hover { background: #3da144; }
+.state-appointment { background: #f5b50a; color: white; }
+.state-appointment:hover { background: #d99c00; }
+.state-busy { background: #d34545; color: white; }
+.state-busy:hover { background: #b33636; }
+
+.cal-cell-label {
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 2px;
+}
+
+#cal-editor-hint {
+  display: none;
+  text-align: center;
+  margin-top: 16px;
+  padding: 12px;
+  background: #fff8e1;
+  border: 1px dashed #f5b50a;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  color: #8a6500;
+}
+
+body.cal-editor-active #cal-editor-hint { display: block; }
+
+/* ============= CONTACT ============= */
+#contact { background: var(--light); }
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.contact-info { display: flex; flex-direction: column; gap: 16px; }
+
+.info-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.04);
+}
+
+.info-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.info-icon {
+  width: 48px; height: 48px;
+  background: var(--green-pale);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.info-card h4 {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gray);
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.info-card .info-value {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--dark);
+  line-height: 1.5;
+}
+
+.info-card .info-value a { color: var(--dark); text-decoration: none; transition: color 0.2s; }
+.info-card .info-value a:hover { color: var(--green); }
+
+/* FORM */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: var(--white);
+  padding: 36px;
+  border-radius: 20px;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.04);
+}
+
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+
+.form-group label {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 14px 16px;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  color: var(--dark);
+  background: var(--white);
+  transition: border-color 0.2s;
+  outline: none;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: var(--green);
+}
+
+.form-group textarea { min-height: 130px; }
+
+.btn-submit {
+  margin-top: 8px;
+  padding: 16px;
+  background: var(--green);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn-submit:hover {
+  background: var(--green-dark);
+  transform: translateY(-2px);
+}
+
+#form-feedback {
+  margin-top: 10px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  display: none;
+}
+
+#form-feedback.success {
+  display: block;
+  background: var(--green-pale);
+  color: var(--green-dark);
+  border: 1px solid var(--green-light);
+}
+
+/* ============= FOOTER ============= */
+footer {
+  background: var(--dark);
+  color: rgba(255,255,255,0.7);
+  padding: 70px 5% 30px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 40px;
+  max-width: 1180px;
+  margin: 0 auto 40px;
+}
+
+footer .logo { color: white; margin-bottom: 14px; display: inline-flex; }
+footer .footer-brand p { font-size: 0.92rem; font-weight: 300; line-height: 1.6; max-width: 320px; }
+
+.footer-col h4 {
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-col ul li { font-size: 0.9rem; }
+.footer-col ul a { color: rgba(255,255,255,0.7); text-decoration: none; transition: color 0.2s; }
+.footer-col ul a:hover { color: var(--green-light); }
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 24px;
+  max-width: 1180px;
+  margin: 0 auto;
+  color: rgba(255,255,255,0.5);
+}
+
+/* ============= ÉDITEUR ============= */
+#editor-toggle {
+  position: fixed;
+  bottom: 24px; right: 24px;
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  background: var(--green);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 200;
+  box-shadow: 0 6px 24px rgba(45,122,58,0.45);
+  transition: all 0.2s;
+}
+
+#editor-toggle:hover { background: var(--green-dark); transform: scale(1.05); }
+
+#editor-panel {
+  position: fixed;
+  top: 0; right: -440px;
+  width: 420px; max-width: 100vw;
+  height: 100vh;
+  background: white;
+  z-index: 250;
+  box-shadow: -4px 0 30px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  transition: right 0.35s;
+}
+
+#editor-panel.open { right: 0; }
+
+.editor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.editor-header h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.editor-close {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: var(--gray);
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.editor-close:hover { background: var(--light); }
+
+.editor-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+}
+
+.editor-tab {
+  flex: 1;
+  padding: 14px;
+  background: none;
+  border: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--gray);
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.editor-tab.active {
+  color: var(--green);
+  border-bottom-color: var(--green);
+}
+
+.editor-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px 24px;
+}
+
+.panel { display: none; }
+.panel.active { display: block; }
+
+.editor-field {
+  margin-bottom: 16px;
+}
+
+.editor-field label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--dark);
+  margin-bottom: 6px;
+}
+
+.editor-field input[type="text"],
+.editor-field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.92rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.editor-field input[type="text"]:focus,
+.editor-field textarea:focus { border-color: var(--green); }
+
+.editor-field input[type="color"] {
+  width: 100%; height: 42px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.editor-field textarea { min-height: 70px; resize: vertical; }
+
+.editor-footer {
+  padding: 18px 24px;
+  border-top: 1px solid var(--border);
+}
+
+.editor-footer .btn-primary {
+  width: 100%;
+  padding: 13px;
+  font-size: 0.95rem;
+  box-shadow: none;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--green);
+  border: 1.5px solid var(--green);
+  padding: 12px;
+  border-radius: 10px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  font-size: 0.92rem;
+  transition: all 0.2s;
+}
+
+.btn-outline:hover { background: var(--green); color: white; }
+
+/* ============= RESPONSIVE ============= */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .nav-cta { padding: 8px 16px; font-size: 0.85rem; }
+  section { padding: 70px 5%; }
+  .about-grid { grid-template-columns: 1fr; }
+  .contact-wrapper { grid-template-columns: 1fr; gap: 30px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+  .cal-wrap { padding: 20px; }
+  .day-header { font-size: 0.7rem; padding: 6px 0; }
+  .cal-cell { font-size: 0.82rem; }
+  .cal-cell-label { font-size: 0.55rem; }
+  #editor-panel { width: 100vw; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav>
+  <a href="#accueil" class="logo">
+    <div class="logo-icon">🌿</div>
+    <span data-editable="logo-text">Artisan Paysagiste Espace Vert</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#apropos">À propos</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#temoignages">Témoignages</a></li>
+    <li><a href="#calendrier">Disponibilités</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Devis gratuit</a>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="accueil" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-eyebrow" data-editable="hero-eyebrow">Paysagiste · Saint-Quentin</span>
+    <h1 data-editable="hero-title">Artisan Paysagiste Espace Vert</h1>
+    <p class="hero-tagline" data-editable="hero-tagline">Artisan jeune et efficace, intervention rapide en urgence</p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn-primary">Demander un devis</a>
+      <a href="#services" class="btn-secondary">Découvrir mes services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== À PROPOS ===== -->
+<section id="apropos">
+  <div class="section-header">
+    <span class="section-eyebrow">À propos</span>
+    <h2 data-editable="about-title">L'art de sublimer votre extérieur</h2>
+    <p data-editable="about-intro">Passionné par mon métier, je mets mon expertise au service de vos espaces verts pour créer et entretenir des jardins qui vous ressemblent.</p>
+  </div>
+  <div class="about-grid">
+    <div class="stat-card">
+      <div class="stat-num" data-editable="stat-1-num">02</div>
+      <div class="stat-label" data-editable="stat-1-label">Aisne & alentours</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" data-editable="stat-2-num">100%</div>
+      <div class="stat-label" data-editable="stat-2-label">Devis gratuit</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" data-editable="stat-3-num">5★</div>
+      <div class="stat-label" data-editable="stat-3-label">Avis clients</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <div class="section-header">
+    <span class="section-eyebrow">Mes prestations</span>
+    <h2 data-editable="services-title">Un savoir-faire complet</h2>
+    <p data-editable="services-intro">De la conception à l'entretien régulier, je prends soin de votre jardin avec passion et expertise.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-icon">✂️</span>
+      <h3 data-editable="srv-1-title">Taille et élagage</h3>
+      <p data-editable="srv-1-desc">Taille de haies, élagage d'arbres, abattage en toute sécurité.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🌱</span>
+      <h3 data-editable="srv-2-title">Tonte et entretien</h3>
+      <p data-editable="srv-2-desc">Tonte de pelouse, débroussaillage, désherbage, ramassage des feuilles.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🌷</span>
+      <h3 data-editable="srv-3-title">Plantation</h3>
+      <p data-editable="srv-3-desc">Création de massifs, plantation d'arbres et d'arbustes adaptés à votre terrain.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🏡</span>
+      <h3 data-editable="srv-4-title">Aménagement paysager</h3>
+      <p data-editable="srv-4-desc">Conception de jardins sur mesure, terrasses, allées et bordures.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🌿</span>
+      <h3 data-editable="srv-5-title">Engazonnement</h3>
+      <p data-editable="srv-5-desc">Préparation du sol, semis ou pose de gazon, scarification, regarnissage.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">💧</span>
+      <h3 data-editable="srv-6-title">Arrosage automatique</h3>
+      <p data-editable="srv-6-desc">Étude, installation et entretien de systèmes d'arrosage intégrés.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TÉMOIGNAGES ===== -->
+<section id="temoignages">
+  <div class="section-header">
+    <span class="section-eyebrow">Témoignages</span>
+    <h2 data-editable="testi-title">Ce que mes clients disent</h2>
+    <p data-editable="testi-intro">La confiance se construit au fil des projets réalisés.</p>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <blockquote data-editable="testi-1">"Travail soigné, ponctuel et de très bons conseils. Mon jardin n'a jamais été aussi beau, je recommande vivement !"</blockquote>
+      <cite data-editable="testi-1-author">— Marie L.</cite>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <blockquote data-editable="testi-2">"Professionnel, à l'écoute et avec tout le matériel nécessaire. Intervention rapide et propre du début à la fin."</blockquote>
+      <cite data-editable="testi-2-author">— Stéphane B.</cite>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <blockquote data-editable="testi-3">"Excellent rapport qualité-prix. Devis clair, intervention efficace et résultat impeccable. À refaire sans hésiter."</blockquote>
+      <cite data-editable="testi-3-author">— Yann D.</cite>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CALENDRIER ===== -->
+<section id="calendrier">
+  <div class="section-header">
+    <span class="section-eyebrow">Réservation</span>
+    <h2 data-editable="cal-title">Mes disponibilités</h2>
+    <p data-editable="cal-intro">Consultez les créneaux disponibles et contactez-moi pour réserver votre intervention.</p>
+  </div>
+  <div class="cal-wrap">
+    <div class="cal-legend">
+      <span class="legend-item"><span class="legend-dot dot-available"></span>Disponible</span>
+      <span class="legend-item"><span class="legend-dot dot-appointment"></span>Sur RDV</span>
+      <span class="legend-item"><span class="legend-dot dot-busy"></span>Indisponible</span>
+    </div>
+    <div id="cal-container">
+      <div id="cal-header">
+        <button onclick="calPrev()" aria-label="Mois précédent">‹</button>
+        <span id="cal-month-label"></span>
+        <button onclick="calNext()" aria-label="Mois suivant">›</button>
+      </div>
+      <div id="cal-days-header"></div>
+      <div id="cal-grid"></div>
+    </div>
+    <div id="cal-editor-hint">Mode éditeur — Cliquez sur un jour pour cycler les états (rien → dispo → RDV → indispo)</div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="section-header">
+    <span class="section-eyebrow">Contact</span>
+    <h2>Demandez votre devis gratuit</h2>
+    <p>N'hésitez pas à me contacter pour discuter de votre projet.</p>
+  </div>
+  <div class="contact-wrapper">
+    <div class="contact-info">
+      <div class="info-card">
+        <div class="info-row">
+          <div class="info-icon">📍</div>
+          <div>
+            <h4>Adresse</h4>
+            <div class="info-value" data-editable="contact-address">35 Chemin de Lehaucourt, 02100 Saint-Quentin</div>
+          </div>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-row">
+          <div class="info-icon">📞</div>
+          <div>
+            <h4>Téléphone</h4>
+            <div class="info-value"><a href="tel:+33762719337" data-editable="contact-phone">07 62 71 93 37</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-row">
+          <div class="info-icon">✉️</div>
+          <div>
+            <h4>Email</h4>
+            <div class="info-value"><a href="mailto:contact@artisan-paysagiste-espace-vert.fr" data-editable="contact-email">contact@artisan-paysagiste-espace-vert.fr</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-row">
+          <div class="info-icon">🕒</div>
+          <div>
+            <h4>Horaires</h4>
+            <div class="info-value" data-editable="contact-hours">Lun–Sam : 8h–19h<br>Dimanche : sur RDV</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+      <div class="form-group">
+        <label for="cf-nom">Nom complet *</label>
+        <input type="text" id="cf-nom" name="nom" required>
+      </div>
+      <div class="form-group">
+        <label for="cf-email">Email *</label>
+        <input type="email" id="cf-email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="cf-tel">Téléphone</label>
+        <input type="tel" id="cf-tel" name="tel">
+      </div>
+      <div class="form-group">
+        <label for="cf-objet">Objet *</label>
+        <select id="cf-objet" name="objet" required>
+          <option value="">— Sélectionner un service —</option>
+          <option>Demande de devis</option>
+          <option>Tonte / entretien régulier</option>
+          <option>Taille / élagage</option>
+          <option>Création / aménagement</option>
+          <option>Plantation</option>
+          <option>Autre</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="cf-msg">Votre message *</label>
+        <textarea id="cf-msg" name="message" required placeholder="Décrivez brièvement votre projet ou besoin…"></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Envoyer ma demande</button>
+      <div id="form-feedback"></div>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#accueil" class="logo">
+        <div class="logo-icon">🌿</div>
+        Artisan Paysagiste Espace Vert
+      </a>
+      <p data-editable="footer-about">Artisan jeune et efficace, intervention rapide en urgence</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#temoignages">Témoignages</a></li>
+        <li><a href="#calendrier">Disponibilités</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li>📍 35 Chemin de Lehaucourt, 02100 Saint-Quentin</li>
+        <li>📞 <a href="tel:+33762719337">07 62 71 93 37</a></li>
+        <li>✉️ <a href="mailto:contact@artisan-paysagiste-espace-vert.fr">contact@artisan-paysagiste-espace-vert.fr</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © <span id="year"></span> Artisan Paysagiste Espace Vert · Tous droits réservés
+  </div>
+</footer>
+
+<!-- ===== ÉDITEUR ===== -->
+<button id="editor-toggle" onclick="toggleEditor()" title="Modifier le site">🛠️</button>
+<div id="editor-panel">
+  <div class="editor-header">
+    <h3>🛠️ Éditer mon site</h3>
+    <button class="editor-close" onclick="toggleEditor()" aria-label="Fermer">×</button>
+  </div>
+  <div class="editor-tabs">
+    <button class="editor-tab active" onclick="showPanel(event, 'texts')">✏️ Textes</button>
+    <button class="editor-tab" onclick="showPanel(event, 'colors')">🎨 Couleurs</button>
+    <button class="editor-tab" onclick="showPanel(event, 'cal')">📅 Agenda</button>
+  </div>
+  <div class="editor-body">
+    <div class="panel active" id="panel-texts" data-panel="texts"></div>
+    <div class="panel" id="panel-colors" data-panel="colors">
+      <div class="editor-field">
+        <label>Couleur principale (vert)</label>
+        <input type="color" id="col-green" value="#2d7a3a">
+      </div>
+      <div class="editor-field">
+        <label>Vert clair (accents)</label>
+        <input type="color" id="col-green-light" value="#4caf50">
+      </div>
+      <div class="editor-field">
+        <label>Vert pâle (fonds)</label>
+        <input type="color" id="col-green-pale" value="#e8f5e9">
+      </div>
+      <div class="editor-field">
+        <label>Couleur du texte</label>
+        <input type="color" id="col-dark" value="#1a1a1a">
+      </div>
+    </div>
+    <div class="panel" id="panel-cal" data-panel="cal">
+      <p style="font-size:0.9rem; color:#666; margin-bottom: 14px; line-height:1.5;">
+        Activez le mode éditeur ci-dessous puis cliquez sur les jours du calendrier pour définir vos disponibilités. Les changements sont enregistrés automatiquement dans votre navigateur.
+      </p>
+      <div class="editor-field">
+        <label style="display:flex; align-items:center; gap:10px; cursor:pointer;">
+          <input type="checkbox" id="cal-edit-toggle" onchange="toggleCalEditor(this.checked)" style="width:auto;">
+          Activer le mode éditeur du calendrier
+        </label>
+      </div>
+      <button class="btn-outline" onclick="resetCalendar()">Réinitialiser le calendrier</button>
+    </div>
+  </div>
+  <div class="editor-footer">
+    <button class="btn-primary" onclick="downloadSite()">💾 Télécharger mon site</button>
+  </div>
+</div>
+
+<script>
+// === Année footer ===
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// === Form submit ===
+function handleSubmit(e) {
+  e.preventDefault();
+  const fb = document.getElementById('form-feedback');
+  fb.className = 'success';
+  fb.textContent = '✓ Merci ! Votre demande a bien été enregistrée. Je vous recontacte sous 24h.';
+  const data = new FormData(e.target);
+  const subject = encodeURIComponent('[' + (data.get('objet') || 'Demande') + '] ' + data.get('nom'));
+  const body = encodeURIComponent(
+    'Nom : ' + data.get('nom') + '\n' +
+    'Email : ' + data.get('email') + '\n' +
+    'Téléphone : ' + (data.get('tel') || '—') + '\n\n' +
+    'Message :\n' + data.get('message')
+  );
+  setTimeout(() => {
+    window.location.href = 'mailto:contact@artisan-paysagiste-espace-vert.fr?subject=' + subject + '&body=' + body;
+  }, 1200);
+}
+
+// === Calendrier ===
+const CAL_STATES = ['none', 'available', 'appointment', 'busy'];
+const CAL_LABELS = { none:'', available:'Dispo', appointment:'RDV', busy:'Indispo' };
+const DAYS_FR = ['Lun','Mar','Mer','Jeu','Ven','Sam','Dim'];
+const MONTHS_FR = ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'];
+
+let calYear = new Date().getFullYear();
+let calMonth = new Date().getMonth();
+let calData = JSON.parse(localStorage.getItem('cal_artisan-paysagiste-espace-vert') || '{}');
+let calEditMode = false;
+
+function calRender() {
+  document.getElementById('cal-month-label').textContent = MONTHS_FR[calMonth] + ' ' + calYear;
+  const dh = document.getElementById('cal-days-header');
+  dh.innerHTML = DAYS_FR.map(d => '<div class="day-header">' + d + '</div>').join('');
+
+  const grid = document.getElementById('cal-grid');
+  grid.innerHTML = '';
+  const firstDay = new Date(calYear, calMonth, 1);
+  const lastDay = new Date(calYear, calMonth + 1, 0);
+  let off = firstDay.getDay() - 1; if (off < 0) off = 6;
+
+  for (let i=0; i<off; i++) grid.innerHTML += '<div class="cal-cell cal-empty"></div>';
+
+  const today = new Date();
+  for (let d=1; d<=lastDay.getDate(); d++) {
+    const key = calYear + '-' + calMonth + '-' + d;
+    const state = calData[key] || 'none';
+    const isToday = d === today.getDate() && calMonth === today.getMonth() && calYear === today.getFullYear();
+    const cls = 'cal-cell state-' + state + (isToday ? ' is-today' : '');
+    const lbl = CAL_LABELS[state] ? '<span class="cal-cell-label">' + CAL_LABELS[state] + '</span>' : '';
+    grid.innerHTML += '<div class="' + cls + '" onclick="calCellClick(\'' + key + '\')">' + d + lbl + '</div>';
+  }
+}
+
+function calCellClick(key) {
+  if (!calEditMode) {
+    const state = calData[key] || 'none';
+    if (state === 'available' || state === 'appointment') {
+      document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+    }
+    return;
+  }
+  const cur = calData[key] || 'none';
+  const i = CAL_STATES.indexOf(cur);
+  const next = CAL_STATES[(i+1) % CAL_STATES.length];
+  if (next === 'none') delete calData[key]; else calData[key] = next;
+  localStorage.setItem('cal_artisan-paysagiste-espace-vert', JSON.stringify(calData));
+  calRender();
+}
+
+function calPrev() { calMonth--; if (calMonth<0) { calMonth=11; calYear--; } calRender(); }
+function calNext() { calMonth++; if (calMonth>11) { calMonth=0; calYear++; } calRender(); }
+
+function toggleCalEditor(on) {
+  calEditMode = on;
+  document.body.classList.toggle('cal-editor-active', on);
+}
+
+function resetCalendar() {
+  if (confirm('Effacer toutes les disponibilités enregistrées ?')) {
+    calData = {};
+    localStorage.removeItem('cal_artisan-paysagiste-espace-vert');
+    calRender();
+  }
+}
+
+calRender();
+
+// === Éditeur ===
+function toggleEditor() {
+  document.getElementById('editor-panel').classList.toggle('open');
+}
+
+function showPanel(e, name) {
+  document.querySelectorAll('.editor-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  e.target.classList.add('active');
+  document.querySelector('[data-panel="' + name + '"]').classList.add('active');
+}
+
+// Build text editor fields
+const textPanel = document.getElementById('panel-texts');
+document.querySelectorAll('[data-editable]').forEach(el => {
+  const k = el.getAttribute('data-editable');
+  const v = el.innerHTML.trim();
+  const useTextarea = v.length > 60 || v.includes('<br>');
+  const field = document.createElement('div');
+  field.className = 'editor-field';
+  const labelTxt = k.replace(/-/g,' ').replace(/^./, c => c.toUpperCase());
+  field.innerHTML = '<label>' + labelTxt + '</label>' +
+    (useTextarea
+      ? '<textarea data-target="' + k + '">' + v.replace(/<br>/g, '\n') + '</textarea>'
+      : '<input type="text" data-target="' + k + '" value="' + v.replace(/"/g, '&quot;') + '">');
+  textPanel.appendChild(field);
+});
+
+document.querySelectorAll('#panel-texts input, #panel-texts textarea').forEach(input => {
+  input.addEventListener('input', e => {
+    const target = e.target.getAttribute('data-target');
+    document.querySelectorAll('[data-editable="' + target + '"]').forEach(el => {
+      el.innerHTML = e.target.value.replace(/\n/g, '<br>');
+    });
+  });
+});
+
+// Color editors
+const colorMap = {
+  'col-green': '--green',
+  'col-green-light': '--green-light',
+  'col-green-pale': '--green-pale',
+  'col-dark': '--dark'
+};
+Object.keys(colorMap).forEach(id => {
+  const input = document.getElementById(id);
+  if (input) input.addEventListener('input', e => {
+    document.documentElement.style.setProperty(colorMap[id], e.target.value);
+  });
+});
+
+// Download site
+function downloadSite() {
+  const html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+  const blob = new Blob([html], {type: 'text/html'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'artisan-paysagiste-espace-vert.html';
+  a.click();
+}
+</script>
+</body>
+</html>
